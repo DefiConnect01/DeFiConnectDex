@@ -5,6 +5,9 @@ const testing = true;
 export const currentConnection = testing ? "testnet" : "mainnet";
 
 export const TOKEN_ADDRESS = {
+  SGPx: {
+    97: "0x397A24EFf3d4feD7Fce4172Ba3Fb68bBf022bAf7"
+  },
   ETH : {
     324: "0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91"
     
@@ -62,7 +65,7 @@ export const NATIVE_TOKEN_ADDRESS: { [index: string]: string } = {
   // 1: TOKEN_ADDRESS.ETH[1],
   // 4: TOKEN_ADDRESS.ETH[4],
   // 56: TOKEN_ADDRESS.BNB[56],
-  // 97: TOKEN_ADDRESS.BNB[97],
+  97: TOKEN_ADDRESS.BNB[97],
   // 80001: TOKEN_ADDRESS.WMATIC[80001],
   324: TOKEN_ADDRESS.WETH[324]
   // 324: TOKEN_ADDRESS.ETH[324]
@@ -75,7 +78,8 @@ export const ROUTER_ADDRESS: { [index: string]: string } = {
   // 56: "0x8547e2E16783Fdc559C435fDc158d572D1bD0970",
   // 80001: "0xb4903E541Bde5C915edD1CE9be817eAE92918147"
   // 80001: "0xA25e4a127356556a6f02898dF917c1d842B19dEe"
-  324: "0xB22eeFe3a73299a7b90045a5DfA624315C680502"
+  324: "0xB22eeFe3a73299a7b90045a5DfA624315C680502",
+  97: "0x569304D8debeA03F8777C592Bb5791EB5d2A5E73"
 };
 
 export const FACTORY_ADDRESS = {
@@ -85,7 +89,8 @@ export const FACTORY_ADDRESS = {
   // 56: "0xDda79Ec4AF818D1e95F0A45B3E7e60461d5228cb",
   // 80001: "0xCcDEB3653D58ab48A1e44724F5243007954d8426"
   // 80001:"0x6552da8c60a0ac0807b60ac997120f4ce0ab337b"
-  324: "0xf7C0d93a508986d8b7d86bE0d3E9F38Cf34C00CD"
+  324: "0xf7C0d93a508986d8b7d86bE0d3E9F38Cf34C00CD",
+  97: "0x8243cCF45C05Ca6714D11D612Ab52BE756220c42"
 };
 
 export const FARM_ADDRESS: { [index: string]: string } = {
@@ -101,7 +106,9 @@ export const MULTICALL_ADDRESS: { [index: string]: string } = {
   // 97: "0x688EC8C059592104fC713E0dA9276e649302C4Ab",
   // 56: "0x6e568FcE995F5c7ddaFB8C0b74B3241328498F8A",
   // 80001:"0xd85620D66D32952b97764dF14302498006Cf90fB"
-  324: "0x7082C0A96921669fCbc73c1C072e205f991e1383"
+  324: "0x7082C0A96921669fCbc73c1C072e205f991e1383",
+  // 97: " 0x120326Ca9Fd2FC38eaBE7bf97Ae4E1C0F9ab835c"
+  97: "0x923Bf2dc4430E34bA7a818b3427965EE3f9FCa5a"
 };
 
 export const farmContractConfig = {
@@ -121,11 +128,12 @@ export const Tst = "Tst";
 export const STT = "STT";
 export const STMx= "STMx";
 export const WETH= "WETH";
+export const SGPx= "SGPx";
 
 export const NATIVE_TOKEN: { [index: number]: string } = {
   // 1: ETH,
   // 4: ETH,
-  // 97: BNB,
+  97: BNB,
   // 56: BNB,
   // 80001:WMATIC
   324: WETH
@@ -142,7 +150,7 @@ export const FARM_TOKEN: { [index: number]: string } = {
 export const DEFAULT_SWAP_TOKENS = {
   // 1: ["ETH", "PBR"], // token0 token1
   // 4: ["ETH", "PBR"],
-  // 97: ["BNB", "PWAR"],
+  97: ["BNB", "SGPx"],
   // 56: ["BNB", "PBR"],
   // 80001: ["WMATIC", "STT"]
   324: ["WETH", "STMx"]
@@ -152,11 +160,11 @@ export const DEFAULT_SWAP_TOKENS = {
 export const DEFAULT_POOL_TOKENS = {
   // 1: ["ETH", "PBR"], // token0 token1
   // 4: ["ETH", "PBR"],
-  // 97: ["BNB", "PWAR"],
+  97: ["BNB", "SGPx"],
   // 56: ["BNB", "PBR"],
   // 80001:["WMATIC", "STT"]
-  324: ["WETH", "STMx"]
-  // 324: ["ETH", "STMx"]
+  // 324: ["WETH", "STMx"]
+  324: ["ETH", "STMx"]
 };
 
 export const TOKEN_BLACKLIST = [];
@@ -172,6 +180,7 @@ export const moonriverNetwork = "moonriver";
 export const maticNetwork = "polygon";
 export const mumbainetwork= "mumbai";
 export const zksyncNetwork = "zksync";
+export const testbscNetwork = "testbsc";
 
 export const supportedChains = [
   1, 4, 1285, 1287, 97, 56, 137, 80001, 324, 1666700000, 1666600000,
@@ -335,12 +344,14 @@ export const SWAP_BASES: { [index: string]: Array<string> } = {
   4: ["USDT", "USDC", "ETH"],
   1285: [],
   1287: [],
-  97: ["BNB", "USDT", "USDC"],
-  56: ["BNB"], 
+  // 97: ["BNB", "USDT", "USDC"],
+  97: ["BNB", "SGPx"],
+  56: ["BNB", "SGPx"], 
   137: [],
   80001: ["WMATIC", "STT"],
   324: ["WETH", "STMx", "ETH"],
   // 324: ["ETH", "STMx"],
+
   1666700000: [],
   1666600000: [],
 };

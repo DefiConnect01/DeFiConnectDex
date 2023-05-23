@@ -50,14 +50,18 @@ export const MULTICALL_ADDRESS: { [index: string]: string } = {
   // 56: "0x6e568FcE995F5c7ddaFB8C0b74B3241328498F8A",
   // 137: "0xbfB508313126cf61CFb3BD7e570cC79C67998A53",
   // 80001:"0xd85620D66D32952b97764dF14302498006Cf90fB"
-  324: "0x7082C0A96921669fCbc73c1C072e205f991e1383"
+  // 324: "0x7082C0A96921669fCbc73c1C072e205f991e1383"
+  // 97: "0x120326Ca9Fd2FC38eaBE7bf97Ae4E1C0F9ab835c",
+  97: "0x923Bf2dc4430E34bA7a818b3427965EE3f9FCa5a"
+  
+
 };
 
 export const NATIVE_TOKEN: { [index: number]: string } = {
   // 1: "ETH",
   // 4: "ETH",
   // 5: "ETH",
-  // 97: "BNB",
+  97: "BNB",
   // 56: "BNB",
   // 137: "MATIC",
   // 80001: "WMATIC",
@@ -74,6 +78,7 @@ export const BSC_NODES = [
   "https://bsc-dataseed1.defibit.io/",
   "https://bsc-dataseed1.ninicoin.io/",
   "https://bsc-dataseed2.defibit.io/",
+  "https://bsc-testnet.publicnode.com"
 ];
 
 export const NETWORK_DETAILS = {
@@ -209,10 +214,12 @@ export function isSupportedChain(
   return !!chainId && !!SupportedChainId[chainId];
 }
 
-export const FALLBACK_DEFAULT_CHAIN: number = SupportedChainId.ZKERA; // Todo change this for release
+// export const FALLBACK_DEFAULT_CHAIN: number = SupportedChainId.ZKERA;
+export const FALLBACK_DEFAULT_CHAIN: number = SupportedChainId.BSC_TESTNET; // Todo change this for release
 export const DAPP_SUPPORTED_ON_CHAINS: number[] = [
   SupportedChainId.MAINNET,
   SupportedChainId.BSC,
   SupportedChainId.POLYGON_MUMBAI,
-  SupportedChainId.ZKERA
+  SupportedChainId.ZKERA,
+  SupportedChainId.BSC_TESTNET
 ];

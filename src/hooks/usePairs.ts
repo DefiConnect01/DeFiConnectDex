@@ -1,4 +1,4 @@
-import { TokenAmount, Pair, Currency, Token, ChainId} from "@tiwatoyin/storm-swap-sdk";
+import { TokenAmount, Pair, Currency, Token, ChainId} from "@ayelawa/solak-sdk";
 import { useMemo } from "react";
 import { Interface } from "@ethersproject/abi";
 

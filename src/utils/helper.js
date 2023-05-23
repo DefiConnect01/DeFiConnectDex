@@ -5,6 +5,7 @@ import {
   moonriverNetwork,
   // mumbainetwork,
   zksyncNetwork,
+  // testbscNetwork,
   REWARD_TOKEN_PER_YEAR,
 } from "../constants/index";
 
@@ -318,7 +319,7 @@ export const getNetworkNameById = (networkId) => {
   } else if ([1285, 1287].includes(parseInt(networkId))) {
     return moonriverNetwork;
   } else {
-    return zksyncNetwork;
+    return bscNetwork;
   }
 };
 

@@ -229,7 +229,7 @@ export default function Provider({ children }) {
  * @param {*} oldEthPrice
  */
 
-async function getGlobalData(ethPrice, oldEthPrice, chainId = 1) {
+async function getGlobalData(ethPrice, oldEthPrice, chainId = 97) {
   // data for each day , historic data used for % changes
   let data = {};
   let oneDayData = {};

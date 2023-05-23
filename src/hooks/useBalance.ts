@@ -4,7 +4,7 @@ import {
   JSBI,
   Token,
   TokenAmount,
-} from "@tiwatoyin/storm-swap-sdk";
+} from "@ayelawa/solak-sdk";
 import { useMemo } from "react";
 import {
   useMultipleContractSingleData,

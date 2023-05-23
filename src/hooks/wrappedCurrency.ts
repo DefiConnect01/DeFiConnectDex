@@ -6,7 +6,7 @@ import {
   Token,
   TokenAmount,
   WETH,
-} from "@tiwatoyin/storm-swap-sdk";
+} from "@ayelawa/solak-sdk";
 
 export function wrappedCurrency(
   currency: Currency | undefined,

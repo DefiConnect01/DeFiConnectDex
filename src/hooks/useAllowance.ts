@@ -1,4 +1,4 @@
-import { Token } from "@tiwatoyin/storm-swap-sdk";
+import { Token } from "@ayelawa/solak-sdk";
 import { useCallback, useEffect, useMemo } from "react";
 import { useTokenContract } from "hooks/useContract";
 import { useSingleCallResult } from "state/multicall/hooks";

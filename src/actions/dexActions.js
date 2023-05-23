@@ -39,7 +39,8 @@ import {
 // import testTokens from "../tokenList/tokenListTest.json";
 // import tokenListBsc from "../tokenList/tokenListBsc.json";
 // import mumbaitokens from "../tokenList/tokenListMatic.json"
-import zksynctokens from "../tokenList/tokenListZk.json"
+// import zksynctokens from "../tokenList/tokenListZk.json"
+import testbsctokens from "../tokenList/tokenListTbsc.json"
 
 
 // swap transaction function
@@ -752,7 +753,8 @@ const localTokenList = {
   // 56: tokenListBsc,
   // 97: testTokens.bsc,
   // 80001:mumbaitokens
-  324: zksynctokens
+  // 324: zksynctokens,
+  97: testbsctokens
 };
 export const loadTokens = (chainId) => async (dispatch) => {
   try {

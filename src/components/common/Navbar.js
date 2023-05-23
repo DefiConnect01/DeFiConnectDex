@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   spanLogoText: {
-    fontWeight: 700,
+    fontWeight: 500,
   },
   appBarBackground: {
     boxShadow: "none",
@@ -110,9 +110,10 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.primary.iconColor,
   },
   logo: {
-    height: 44,
-    [theme.breakpoints.down("sm")]: {
-      height: 30,
+    height: 60,
+    // [theme.breakpoints.down("sm")]: {
+      [theme.breakpoints.down("md")]:{
+      height: 60,
       width: "auto",
     },
   },
@@ -242,14 +243,16 @@ const Navbar = ({ account: { currentChain } }) => {
         className={classes.appBarBackground}
       >
         <Toolbar className={classes.sectionDesktop}>
-          <a href="/" style={{fontSize:"26px", backgroundColor:"#C369A5", height:"100%", padding:"1rem"}}>
+          <a href="/" style={{fontSize:"26px", height:"100%", padding:"1rem"}}>
             {" "}
             <img
               alt="logo"
-              src="img/logo-white.png" 
+              // src="img/logo-white.png" 
+              src="img/solakrv.png" 
               className={classes.logo}
             />
-            <span className={classes.spanLogoText}>STORM</span>SWAP
+            {/* <span className={classes.spanLogoText}>STORM</span>SWAP */}
+            <span className={classes.spanLogoText}>SOLAK</span>GPT
           </a>
 
           {/* <div className={classes.leftMargin} /> */}
@@ -274,14 +277,14 @@ const Navbar = ({ account: { currentChain } }) => {
               
             </a>
           </div> */}
-          <div>
+          {/* <div>
             <a
               href="/launchpad"
               className={classes.navbarItemsDesktop}
             >
               Launchpad 
             </a>
-          </div>
+          </div> */}
 
           {/* <div>
             <a

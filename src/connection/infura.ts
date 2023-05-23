@@ -78,6 +78,7 @@ export const FALLBACK_URLS: any = {
     "https://data-seed-prebsc-1-s2.binance.org:8545/",
     "https://data-seed-prebsc-1-s2.binance.org:8545	",
     "https://bsctestapi.terminet.io/rpc	",
+    "https://bsc-testnet.publicnode.com"
   ],
   [SupportedChainId.BSC]: [],
 };
@@ -134,7 +135,7 @@ export const RPC_URLS: any = {
   ],
  
   [SupportedChainId.BSC_TESTNET]: [
-    `https://rpc.ankr.com/bsc_testnet_chapel`,
+    `https://bsc-testnet.publicnode.com`,
     ...FALLBACK_URLS[SupportedChainId.BSC_TESTNET],
   ],
   [SupportedChainId.BSC]: [
