@@ -6,7 +6,7 @@ import Swap from "./pages/Swap";
 import AddLiquidity from "./pages/AddLiquidity";
 import Analytics from "./pages/Analytics/Analytics";
 import { Link } from "react-router-dom";
-import Farms from "./pages/Farms/Farms";
+// import Farms from "./pages/Farms/Farms";
 
 const useStyles = makeStyles((theme) => ({
   tabs: {
@@ -52,7 +52,8 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    background: theme.palette.primary.iconBack,
+    // background: theme.palette.primary.iconBack,
+    background: "black",
     color: theme.palette.primary.iconColor,
     padding: 3,
     paddingLeft: 15,
@@ -172,7 +173,7 @@ const TabPage = ({ data = 1 }) => {
             Pools{" "}
           </div>
         </Link>
-        <Link to="/farms" className={classes.noDecoration}>
+        {/* <Link to="/farms" className={classes.noDecoration}>
           <div
             className={
               data === 2 ? classes.active_tabStyle : classes.default_tabStyle
@@ -180,7 +181,7 @@ const TabPage = ({ data = 1 }) => {
           >
             Farms{" "}
           </div>
-        </Link>
+        </Link> */}
         {/* <Link to="/charts" className={classes.noDecoration}>
           {" "}
           <div
@@ -201,10 +202,10 @@ const TabPage = ({ data = 1 }) => {
         <AddLiquidity />
       </TabPanel>
 
-      <TabPanel data={2} index={2}>
+      {/* <TabPanel data={2} index={2}>
         <Farms />
-      </TabPanel>
-      <TabPanel data={3} index={3}>
+      </TabPanel> */}
+      <TabPanel data={2} index={2}>
         <Analytics />
       </TabPanel>
     </div>

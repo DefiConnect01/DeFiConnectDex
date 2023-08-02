@@ -2,6 +2,7 @@
   "short_name": "SolakSwap",
   "name": "Solak",
   "icons": [
+   
     {
       "src": "solakrv.png",
       "sizes": "64x64 32x32 24x24 16x16",

@@ -7,6 +7,7 @@ import { NETWORK_DETAILS } from './rpc';
 
 function getRpcUrl(chainId: SupportedChainId): string {
   switch (chainId) {
+    
     case SupportedChainId.ZKERA:
     case SupportedChainId.MAINNET:
     case SupportedChainId.RINKEBY:
@@ -52,11 +53,11 @@ export const switchChain = async (
       console.log('switch test activation failed ', { error });
       const networkObject =
         // chainId === 324 ? NETWORK_DETAILS.ZKERA : NETWORK_DETAILS.BSC;
-        chainId === 97 ? NETWORK_DETAILS.BSC_TESTNET : NETWORK_DETAILS.BSC;
+        chainId === 5 ? NETWORK_DETAILS.GOERLI : NETWORK_DETAILS.BSC;
 
       console.log('switch test activation failed now adding ', networkObject);
       console.log('switch test adding chain ', networkObject);
-      if (chainId === 97) {
+      if (chainId === 5) {
         await connector?.provider?.request({
           method: 'wallet_addEthereumChain',
           params: [networkObject],

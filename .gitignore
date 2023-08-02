@@ -26,3 +26,5 @@ yarn-error.log*
 .DS_Store
 
 package-lock.json
+# Local Netlify folder
+.netlify

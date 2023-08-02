@@ -151,24 +151,24 @@ const Navbar = ({ account: { currentChain } }) => {
     >
       <List>
         {[
-          {
-            name: "Stake",
-            link: "/stake",
-            id: "staking",
-            icon: <EqualizerOutlined />,
-          },
+          // {
+          //   name: "Stake",
+          //   link: "/stake",
+          //   id: "staking",
+          //   icon: <EqualizerOutlined />,
+          // },
           // {
           //   name: "Farm",
           //   link: "https://farm.polkabridge.org/",
           //   id: "intro",
           //   icon: <TouchAppOutlined />,
           // },
-          {
-            name: "Launchpad",
-            link: "/launchpad",
-            id: "characters",
-            icon: <PeopleAltOutlined />,
-          },
+          // {
+          //   name: "Launchpad",
+          //   link: "/launchpad",
+          //   id: "characters",
+          //   icon: <PeopleAltOutlined />,
+          // },
           // {
           //   name: "INO",
           //   link: "https://ino.polkabridge.org/",
@@ -257,7 +257,7 @@ const Navbar = ({ account: { currentChain } }) => {
 
           {/* <div className={classes.leftMargin} /> */}
 
-          <div>
+          {/* <div>
           <a
               href="/stake"
               className={classes.navbarItemsDesktop}
@@ -265,7 +265,7 @@ const Navbar = ({ account: { currentChain } }) => {
             >
               Stake 
             </a>
-          </div>
+          </div> */}
           {/* <div>
             <a
               href="https://farm.polkabridge.org"
@@ -328,7 +328,7 @@ const Navbar = ({ account: { currentChain } }) => {
               <img
                 alt="logo"
                 variant="square"
-                src="https://res.cloudinary.com/advantage-health-africa/image/upload/v1682006941/title-logo_ictfbb.png"
+                src="https://i.ibb.co/wK5J4yj/solak.png"
                 className={classes.logo}
               />
             </a>

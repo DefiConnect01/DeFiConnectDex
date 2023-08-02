@@ -45,14 +45,15 @@ export const ALL_SUPPORTED_CHAIN_IDS: SupportedChainId[] = Object.values(
 export const MULTICALL_ADDRESS: { [index: string]: string } = {
   // 1: "0x3a2Bd96Da4B14C30918aE0fC0E784E2F56120F1d",
   // 4: "0x6c4f9282bBD29992bF4F064F0165e805336Eef59",
-  // 5: "0xD64c0FBEe803AfB35ed721a3E67261e1a41f86c5",
+  5: "0x09926fE723a2a2eBb615159cB5dE98e12D649B7e",
   // 97: "0x688EC8C059592104fC713E0dA9276e649302C4Ab",
   // 56: "0x6e568FcE995F5c7ddaFB8C0b74B3241328498F8A",
   // 137: "0xbfB508313126cf61CFb3BD7e570cC79C67998A53",
   // 80001:"0xd85620D66D32952b97764dF14302498006Cf90fB"
   // 324: "0x7082C0A96921669fCbc73c1C072e205f991e1383"
   // 97: "0x120326Ca9Fd2FC38eaBE7bf97Ae4E1C0F9ab835c",
-  97: "0x923Bf2dc4430E34bA7a818b3427965EE3f9FCa5a"
+  
+  // 97: "0x923Bf2dc4430E34bA7a818b3427965EE3f9FCa5a"
   
 
 };
@@ -60,8 +61,8 @@ export const MULTICALL_ADDRESS: { [index: string]: string } = {
 export const NATIVE_TOKEN: { [index: number]: string } = {
   // 1: "ETH",
   // 4: "ETH",
-  // 5: "ETH",
-  97: "BNB",
+  5: "ETH",
+  // 97: "BNB",
   // 56: "BNB",
   // 137: "MATIC",
   // 80001: "WMATIC",
@@ -215,11 +216,11 @@ export function isSupportedChain(
 }
 
 // export const FALLBACK_DEFAULT_CHAIN: number = SupportedChainId.ZKERA;
-export const FALLBACK_DEFAULT_CHAIN: number = SupportedChainId.BSC_TESTNET; // Todo change this for release
+export const FALLBACK_DEFAULT_CHAIN: number = SupportedChainId.GOERLI; // Todo change this for release
 export const DAPP_SUPPORTED_ON_CHAINS: number[] = [
   SupportedChainId.MAINNET,
   SupportedChainId.BSC,
   SupportedChainId.POLYGON_MUMBAI,
   SupportedChainId.ZKERA,
-  SupportedChainId.BSC_TESTNET
+  SupportedChainId.GOERLI 
 ];

@@ -5,6 +5,7 @@ import {
   moonriverNetwork,
   // mumbainetwork,
   zksyncNetwork,
+  goerliNetwork,
   // testbscNetwork,
   REWARD_TOKEN_PER_YEAR,
 } from "../constants/index";
@@ -311,8 +312,8 @@ export const getRewardApr = (
 };
 
 export const getNetworkNameById = (networkId) => {
-  if ([56, 97].includes(parseInt(networkId))) {
-    return bscNetwork;
+  if ([5, 1].includes(parseInt(networkId))) {
+    return goerliNetwork;
   }
   else if ([324, 280].includes(parseInt(networkId))) {
     return zksyncNetwork;

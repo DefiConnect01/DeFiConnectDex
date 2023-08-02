@@ -1,0 +1,17 @@
+[
+    {
+      "name": "ETH",
+      "symbol": "ETH",
+      "address": "0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/12591/small/binance-coin-logo.png?1600947313"
+    },
+  
+    {
+      "name": "Xfi Token",
+      "symbol": "XFI",
+      "address":"0x4Ec1c1337c555c1E2DFD814837fBc81Fc28ff716",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/13744/small/symbol-whitebg200x200.png?1611377553"
+    }
+  ]
