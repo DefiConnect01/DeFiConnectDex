@@ -5,16 +5,18 @@ const testing = true;
 export const currentConnection = testing ? "testnet" : "mainnet";
 
 export const TOKEN_ADDRESS = {
-  SGPT: {
-    97: "0x397A24EFf3d4feD7Fce4172Ba3Fb68bBf022bAf7"
-  },
+  
   ETH : {
     324: "0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91",
     5: "0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6"
     
   },
-  XFI: {
+  XFFI: {
     5: "0x4Ec1c1337c555c1E2DFD814837fBc81Fc28ff716",
+    130: "0xAdd81452c4fc1C3CCA5831e312384f4f3978f30e"
+  },
+  tGRAM: {
+    130: "0x2cE89A6c99B45d1b62c1c07cAF731bF12d88C293"
   },
   WETH :{
     324: "0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91",
@@ -72,7 +74,8 @@ export const NATIVE_TOKEN_ADDRESS: { [index: string]: string } = {
   // 56: TOKEN_ADDRESS.BNB[56],
   97: TOKEN_ADDRESS.BNB[97],
   // 80001: TOKEN_ADDRESS.WMATIC[80001],
-  324: TOKEN_ADDRESS.WETH[324]
+  324: TOKEN_ADDRESS.WETH[324],
+  130: TOKEN_ADDRESS.tGRAM[130]
   // 324: TOKEN_ADDRESS.ETH[324]
 };
 
@@ -85,7 +88,8 @@ export const ROUTER_ADDRESS: { [index: string]: string } = {
   // 80001: "0xA25e4a127356556a6f02898dF917c1d842B19dEe"
   // 324: "0xB22eeFe3a73299a7b90045a5DfA624315C680502",
   // 97: "0x569304D8debeA03F8777C592Bb5791EB5d2A5E73"
-  5: "0xfece9DF2D4bC76020A368C909C105e7863fC0860"
+  // 5: "0xfece9DF2D4bC76020A368C909C105e7863fC0860",
+  130:"0x69594650D7B57b903296042559d41f86a6D9ffA9"
 };
 
 export const FACTORY_ADDRESS = {
@@ -97,14 +101,17 @@ export const FACTORY_ADDRESS = {
   // 80001:"0x6552da8c60a0ac0807b60ac997120f4ce0ab337b"
   // 324: "0xf7C0d93a508986d8b7d86bE0d3E9F38Cf34C00CD",
   // 97: "0x8243cCF45C05Ca6714D11D612Ab52BE756220c42"
-  5: "0x929b6543a6Acd3467006ef2aAA35C0C8D3C15611"
+  // 5: "0x929b6543a6Acd3467006ef2aAA35C0C8D3C15611",
+  130:"0x82628bA866c5a27Fa8c29120485cb80Bf04A43DD"
 };
 
 export const FARM_ADDRESS: { [index: string]: string } = {
-  1: "0xF0301472c7e383310bE1D426aA59207818fB8a53",
-  4: "0x57eA8360A59468112cE669EA8bFb2169062EAF0d",
-  97: "0xc14c4F5041D62c03b4E18932975C30817A4CB39f",
-  56: "0x2A5Ce0C18c885fbc9B41933f79559a6c40208c72",
+  5: "0x17B1969EFe5B35E9Ee2a3B829eB604C3447F0032",
+  // 1: "0xF0301472c7e383310bE1D426aA59207818fB8a53",
+  // 4: "0x57eA8360A59468112cE669EA8bFb2169062EAF0d",
+  // 97: "0xc14c4F5041D62c03b4E18932975C30817A4CB39f",
+  // 56: "0x2A5Ce0C18c885fbc9B41933f79559a6c40208c72",
+  
 };
 
 export const MULTICALL_ADDRESS: { [index: string]: string } = {
@@ -116,7 +123,8 @@ export const MULTICALL_ADDRESS: { [index: string]: string } = {
   // 324: "0x7082C0A96921669fCbc73c1C072e205f991e1383",
   // // 97: " 0x120326Ca9Fd2FC38eaBE7bf97Ae4E1C0F9ab835c"
   // 97: "0x923Bf2dc4430E34bA7a818b3427965EE3f9FCa5a"
-  5: "0x09926fE723a2a2eBb615159cB5dE98e12D649B7e"
+  5: "0x09926fE723a2a2eBb615159cB5dE98e12D649B7e",
+  130: "0xCD1FfF5FcDE62bEFDc1a7E3Ddf6E166fA24f7B98"
 };
 
 export const farmContractConfig = {
@@ -137,12 +145,15 @@ export const STT = "STT";
 export const STMx= "STMx";
 export const WETH= "WETH";
 export const SGPT= "SGPT";
+export const XFFI = "XFFI";
+export const tGRAM = "tGRAM"
 
 export const NATIVE_TOKEN: { [index: number]: string } = {
   // 1: ETH,
   // 4: ETH,
   97: BNB,
   5: ETH,
+  130: tGRAM,
   // 56: BNB,
   // 80001:WMATIC
   324: WETH
@@ -150,10 +161,12 @@ export const NATIVE_TOKEN: { [index: number]: string } = {
 };
 
 export const FARM_TOKEN: { [index: number]: string } = {
+  // 5: XFI,
   1: PBR,
   4: PBR,
   97: PWAR,
   56: PWAR,
+ 
 };
 
 export const DEFAULT_SWAP_TOKENS = {
@@ -164,7 +177,8 @@ export const DEFAULT_SWAP_TOKENS = {
   // 80001: ["WMATIC", "STT"]
   324: ["WETH", "STMx"],
   // 324: ["ETH", "STMx"]
-  5: ["ETH","XFI"]
+  5: ["ETH","XFI"],
+  130: ["tGRAM","XFFI"]
 };
 
 export const DEFAULT_POOL_TOKENS = {
@@ -175,7 +189,8 @@ export const DEFAULT_POOL_TOKENS = {
   // 80001:["WMATIC", "STT"]
   // 324: ["WETH", "STMx"]
   // 324: ["ETH", "STMx"]
-  5: ["ETH","XFI"]
+  // 5: ["ETH","XFFI"],
+  130: ["tGRAM","XFFI"]
 };
 
 export const TOKEN_BLACKLIST = [];
@@ -193,9 +208,10 @@ export const mumbainetwork= "mumbai";
 export const zksyncNetwork = "zksync";
 export const testbscNetwork = "testbsc";
 export const goerliNetwork = "goerli"
+export const gramNetwork = "gram"
 
 export const supportedChains = [
-  1, 4, 5, 1285, 1287, 97, 56, 137, 80001, 324, 1666700000, 1666600000,
+  1, 4, 5, 1285, 1287, 97, 56, 130, 137, 80001, 324, 1666700000, 1666600000,
 ];
 
 export const allowanceAmount = "9999999999999999999999999";
@@ -208,7 +224,8 @@ export const BLOCK_EXPLORER = {
   97: "https://testnet.bscscan.com",
   80001: "https://mumbai.polygonscan.com/",
   324: "https://explorer.zksync.io/",
-  5: "https://goerli.etherscan.io/"
+  5: "https://goerli.etherscan.io/",
+  130: "https://scan.engram.tech/"
 };
 
 export const nullAddress = "0x0000000000000000000000000000000000000000";
@@ -248,9 +265,20 @@ export const supportedFarmingPools = {
   4: ["PBR-ETH", "ETH-USDT"],
   56: ["PBR-BNB", "PWAR-BNB", "BNB-USDT"],
   97: ["PWAR-BNB", "BNB-USDT"],
+  // 5: ["XFI-ETH"],
+  // 130: ["XFI-tGRAM"]
 };
 
 export const farmingPoolConstants = {
+  5: {
+    "XFI-ETH": {
+      multiplier: 40,
+      pid: 0,
+      address: "0x853dffe125b692117ea8d93044E4b0B11c35F035",
+      blocksPerYear: "",
+      lpApr: 2,
+      decimals: 18,
+    },
   // 1: {
   //   "PBR-ETH": {
   //     multiplier: 40,
@@ -330,13 +358,18 @@ export const farmingPoolConstants = {
   //     lpApr: 0,
   //     decimals: 12,
   //   },
-  // },
+   },
 };
 
 export const RINKEBY_BLOCK_TIME = 15;
 export const PBR_PER_BLOCK = 0.5;
 export const BLOCKS_PER_YEAR = (60 / RINKEBY_BLOCK_TIME) * 60 * 24 * 365;
 export const PBR_PER_YEAR = PBR_PER_BLOCK * BLOCKS_PER_YEAR;
+
+export const GOERLI_BLOCK_TIME = 15;
+export const XFI_PER_BLOCK = 0.12;
+export const BLOCKS_PER_YEAR_GEORLI = (60 / GOERLI_BLOCK_TIME) * 60 * 24 * 365;
+export const XFI_PER_YEAR = XFI_PER_BLOCK * BLOCKS_PER_YEAR_GEORLI;
 
 export const PWAR_PER_BLOCK = 0.6;
 export const BLOCKS_PER_YEAR_BSC = 10220000;
@@ -345,6 +378,7 @@ export const PWAR_PER_YEAR = PWAR_PER_BLOCK * BLOCKS_PER_YEAR_BSC;
 export const REWARD_TOKEN_PER_YEAR = {
   1: PBR_PER_YEAR,
   56: PWAR_PER_YEAR,
+  5: XFI_PER_YEAR 
 };
 
 export const BASE_URL =
@@ -364,6 +398,7 @@ export const SWAP_BASES: { [index: string]: Array<string> } = {
   137: [],
   80001: ["WMATIC", "STT"],
   324: ["WETH", "STMx", "ETH"],
+  130:["tGRAM","XFFI"],
   // 324: ["ETH", "STMx"],
 
   1666700000: [],

@@ -37,13 +37,13 @@ export function useTransactionCallback(): {
     chainId: ChainId
   ) => Promise<void>;
   stakeLpTokens: (
-    lpAmount: String,
+    lpAmount: Number,
     pid: Number,
     account: String,
     chainId: ChainId
   ) => Promise<void>;
   unstakeLpTokens: (
-    lpAmount: String,
+    lpAmount: Number,
     pid: Number,
     account: String,
     chainId: ChainId
@@ -449,7 +449,7 @@ export function useTransactionCallback(): {
 
   const stakeLpTokens = useCallback(
     async (
-      lpAmount: String,
+      lpAmount: Number,
       pid: Number,
       account: String,
       chainId: ChainId
@@ -517,7 +517,7 @@ export function useTransactionCallback(): {
 
   const unstakeLpTokens = useCallback(
     async (
-      lpAmount: String,
+      lpAmount: Number,
       pid: Number,
       account: String,
       chainId: ChainId

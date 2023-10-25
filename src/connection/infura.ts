@@ -17,6 +17,10 @@ export const FALLBACK_URLS: any = {
     "https://rpc.ankr.com/eth",
     "https://eth-mainnet.public.blastapi.io",
   ],
+  [SupportedChainId.GramTestnet]: [
+    // "Fallback" URLs
+    "https://rpc-tokio.swiss-node.engineer/",
+  ],
   [SupportedChainId.ZKERA]: [
     // "Fallback" URLs
     "https://mainnet.era.zksync.io",
@@ -91,6 +95,11 @@ export const RPC_URLS: any = {
   [SupportedChainId.MAINNET]: [
     `https://mainnet.infura.io/v3/${INFURA_KEY}`,
     ...FALLBACK_URLS[SupportedChainId.MAINNET],
+  ],
+  [SupportedChainId.GramTestnet]: [
+    // `https://mainnet.era.zksync.io`,
+    `https://rpc-tokio.swiss-node.engineer/`,
+    ...FALLBACK_URLS[SupportedChainId.GramTestnet],
   ],
   [SupportedChainId.ZKERA]: [
     // `https://mainnet.era.zksync.io`,

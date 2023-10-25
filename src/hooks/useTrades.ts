@@ -18,8 +18,9 @@ import { ETH, NATIVE_TOKEN, SWAP_BASES } from "../constants/index";
 // import tokenListBsc from "../tokenList/tokenListBsc.json";
 // import tokenListMatic from "../tokenList/tokenListMatic.json";
 // import tokenListZk from "../tokenList/tokenListZk.json";
-import tokenListTbsc from "../tokenList/tokenListTbsc.json";
-import tokenListGoerli from "../tokenList/tokenListGoerli.json"
+// import tokenListTbsc from "../tokenList/tokenListTbsc.json";
+// import tokenListGoerli from "../tokenList/tokenListGoerli.json"
+import tokenListGram from "../tokenList/tokenListGram.json"
 import useActiveWeb3React from "../hooks/useActiveWeb3React";
 import { getAddress } from "@ethersproject/address";
 import { wrappedCurrency } from "./wrappedCurrency";
@@ -33,7 +34,8 @@ const localTokens: { [index: string]: Array<any> } = {
   // 80001: tokenListMatic
   // 324: tokenListZk
   // 97: tokenListTbsc,
-  5: tokenListGoerli 
+  // 5: tokenListGoerli 
+  130: tokenListGram
 };
 
 function getTokenWithSymbol(symbol: string, chainId: ChainId) {

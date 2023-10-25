@@ -15,10 +15,10 @@
     "@jridgewell/gen-mapping" "^0.3.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
-"@ayelawa/solak-sdk@1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@ayelawa/solak-sdk/-/solak-sdk-1.0.4.tgz#9759a5562807feecc5b1bd09156ce6be7438a388"
-  integrity sha512-cBKvPeV7eHtCgQFEqNSvAMJeAo6c6/JyUJ1qJYpzOaCwhD5LW0ovr06nYjgsIIAFUDHk2o1KdtGlqjtDMJVSPg==
+"@ayelawa/solak-sdk@1.0.9":
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/@ayelawa/solak-sdk/-/solak-sdk-1.0.9.tgz#9e10fa0a771791129af6268933133fede0054cd2"
+  integrity sha512-f6UNHvCdsyie931IGh1Z53HZHkG01hWHFEP6Uli1q/66+dAJ6CR8E/VvyAMUAFy72T8PONCpwdNKd3cRZ/RpdA==
   dependencies:
     "@ethersproject/address" "^5.0.0"
     "@ethersproject/solidity" "^5.0.0"

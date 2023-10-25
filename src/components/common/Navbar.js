@@ -31,7 +31,8 @@ const useStyles = makeStyles((theme) => ({
   },
   appBarBackground: {
     boxShadow: "none",
-    backgroundColor: "#370937",
+    // backgroundColor: "#370937",
+    backgroundColor: "black",
     display: "flex",
     alignItems: "center",
     justifyContent:"space-between !important",
@@ -252,7 +253,8 @@ const Navbar = ({ account: { currentChain } }) => {
               className={classes.logo}
             />
             {/* <span className={classes.spanLogoText}>STORM</span>SWAP */}
-            <span className={classes.spanLogoText}>SOLAK</span>GPT
+            {/* <span className={classes.spanLogoText}>X</span>GPT */}
+            <span className={classes.spanLogoText}>XFI</span>
           </a>
 
           {/* <div className={classes.leftMargin} /> */}

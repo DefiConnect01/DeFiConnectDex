@@ -358,13 +358,13 @@ const Farm = (props) => {
         <div className="d-flex justify-content-between align-items-center">
           <div className={classes.tokenTitle}>EARN</div>
           <div className={classes.tokenAmount}>
-            {FARM_TOKEN?.[chainId ? chainId : 1]} + Fees{" "}
+            {FARM_TOKEN?.[chainId ? chainId : 5]} + Fees{" "}
           </div>
         </div>
 
         <div className="d-flex justify-content-between align-items-center">
           <div className={classes.tokenTitle}>
-            {FARM_TOKEN?.[chainId ? chainId : 1]} earned
+            {FARM_TOKEN?.[chainId ? chainId : 5]} earned
           </div>
           <div className={classes.tokenAmount}></div>
         </div>
