@@ -83,7 +83,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
   },
   settingIcon: {
-    color: theme.palette.primary.iconColor,
+    color: "white",
     fontSize: 22,
     cursor: "pointer",
     [theme.breakpoints.down("sm")]: {
@@ -208,7 +208,7 @@ const useStyles = makeStyles((theme) => ({
   },
   removeBtn: {
     marginTop: 20,
-    backgroundColor: theme.palette.primary.pbr,
+    backgroundColor: "blue",
     color: "white",
     width: "95%",
     textTransform: "none",
@@ -228,7 +228,7 @@ const useStyles = makeStyles((theme) => ({
   },
   approveBtn: {
     marginTop: 30,
-    backgroundColor: theme.palette.primary.pbr,
+    backgroundColor: "blue",
     color: theme.palette.primary.buttonText,
 
     width: "fit-content",

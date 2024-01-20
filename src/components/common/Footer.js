@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: 10,
     marginRight: 10,
     fontSize: 13,
-    color: theme.palette.primary.iconColor,
+    color: "white",
     [theme.breakpoints.down("sm")]: {
       fontSize: 9,
       marginLeft: 5,
@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
   },
   ankrLabel: {
     textAlign: "center",
-    color: theme.palette.primary.iconColor,
+    color: "white",
     fontSize: 12,
     paddingTop: 3,
     marginLeft: 10,

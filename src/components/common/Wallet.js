@@ -17,7 +17,8 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    background: theme.palette.primary.pbr,
+    // background: "blue",
+    background: "blue",
     color: theme.palette.primary.buttonText,
     borderRadius: 15,
     padding: 6,
@@ -34,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
   },
   smallBtn: {
     backgroundColor: theme.palette.primary.iconBack,
-    color: theme.palette.primary.iconColor,
+    color: "white",
     borderRadius: 15,
     height: 35,
     marginRight: 40,

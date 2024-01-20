@@ -12,7 +12,7 @@
     "webpack-bundle-analyzer": "^4.5.0"
   },
   "dependencies": {
-    "@ayelawa/solak-sdk": "1.0.9",
+    "@ayelawa/solak-sdk": "2.0.3",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@material-ui/core": "^4.11.3",

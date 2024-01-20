@@ -1,0 +1,8 @@
+Dex Contract Addresses on Plume Testnet Network.
+Factory contract: 0xCD1FfF5FcDE62bEFDc1a7E3Ddf6E166fA24f7B98
+Init Hash Code : 0x65b9251d510210a2567d4eac12e70be070c8634713abcdf62c50066dcb831796
+Router Contract:0x9Af36aD30ecAc6ce8B6D1F3d6C42711c48Ab627f
+Multicall:0x63101C389e9a005a1f3b9EB036B73a95FC23fAEf
+WETH: 0xd9d6507119Ec56ce22A89bEdAcd6B44D495BFf08
+DCC Token contract: 0x42F16c5E448114CB9a93D47b81349CdAE13ED768
+SDK:  @ayelawa/solak-sdk@2.0.3 to be added

@@ -33,6 +33,7 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: "none",
     // backgroundColor: "#370937",
     backgroundColor: "black",
+    // backgroundColor:"white",
     display: "flex",
     alignItems: "center",
     justifyContent:"space-between !important",
@@ -80,7 +81,7 @@ const useStyles = makeStyles((theme) => ({
     verticalAlign: "baseline",
     textAlign: "left",
     fontSize: 16,
-    color: theme.palette.primary.iconColor,
+    color: "white",
   },
   navbarItemsDesktop: {
     paddingRight: 10,
@@ -108,7 +109,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   menuIcon: {
-    color: theme.palette.primary.iconColor,
+    color: "white",
   },
   logo: {
     height: 60,
@@ -126,7 +127,7 @@ const useStyles = makeStyles((theme) => ({
     // borderColor: "#3A1242",
     height: "100%",
     // backgroundColor: theme.palette.primary.iconBack,
-    color: theme.palette.primary.iconColor,
+    color: "white",
   },
 }));
 
@@ -249,12 +250,14 @@ const Navbar = ({ account: { currentChain } }) => {
             <img
               alt="logo"
               // src="img/logo-white.png" 
-              src="img/solakrv.png" 
+              // src="img/solakrv.png" 
+              // src="img/deficonnect.jpg" 
+              src="https://i.ibb.co/Z6hz0Dq/deficonnectcredit1.png"
               className={classes.logo}
             />
             {/* <span className={classes.spanLogoText}>STORM</span>SWAP */}
             {/* <span className={classes.spanLogoText}>X</span>GPT */}
-            <span className={classes.spanLogoText}>XFI</span>
+            <span className={classes.spanLogoText}></span>
           </a>
 
           {/* <div className={classes.leftMargin} /> */}
@@ -330,7 +333,8 @@ const Navbar = ({ account: { currentChain } }) => {
               <img
                 alt="logo"
                 variant="square"
-                src="https://i.ibb.co/wK5J4yj/solak.png"
+                // src="https://i.ibb.co/wK5J4yj/solak.png"
+                src="https://i.ibb.co/Z6hz0Dq/deficonnectcredit1.png"
                 className={classes.logo}
               />
             </a>

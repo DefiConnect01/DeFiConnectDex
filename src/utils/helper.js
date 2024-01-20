@@ -7,6 +7,7 @@ import {
   zksyncNetwork,
   goerliNetwork,
   gramNetwork,
+  plumeNetwork,
   // testbscNetwork,
   REWARD_TOKEN_PER_YEAR,
 } from "../constants/index";
@@ -313,7 +314,10 @@ export const getRewardApr = (
 };
 
 export const getNetworkNameById = (networkId) => {
-  if ([130].includes(parseInt(networkId))) {
+  if ([161221135].includes(parseInt(networkId))) {
+    return plumeNetwork;
+  }
+  else if ([131].includes(parseInt(networkId))) {
     return gramNetwork;
   }
   else if ([324, 280].includes(parseInt(networkId))) {

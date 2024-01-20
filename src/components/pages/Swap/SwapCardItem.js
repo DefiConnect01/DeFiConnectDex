@@ -12,7 +12,8 @@ const useStyles = makeStyles((theme) => ({
     height: "100%",
     minHeight: 100,
     backgroundColor: theme.palette.primary.bgCard,
-    border: "0.5px solid #C128BD",
+    // border: "0.5px solid #C128BD",
+    border: "0.5px solid white",
 
     borderRadius: 15,
     paddingBottom: 0,
@@ -82,7 +83,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   maxButton: {
-    color: theme.palette.textColors.pbr,
+    // color: theme.palette.textColors.pbr,
+    color:"white",
     cursor: "pointer",
 
     borderRadius: 10,
@@ -155,7 +157,7 @@ const SwapCardItem = (props) => {
                 selectedToken={currentToken}
                 disableToken={disableToken}
                 handleTokenSelected={onTokenChange}
-                style={{color:"white"}}
+                style={{color:"white", backgroundColor: "grren"}}
               />
             </div>
           </div>

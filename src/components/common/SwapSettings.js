@@ -15,7 +15,7 @@ import { Button, Tooltip } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
   background: {
     backgroundColor: "#ffffff",
-    color: theme.palette.primary.iconColor,
+    color: "white",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
   },
   input: {
     backgroundColor: "transparent",
-    color: theme.palette.primary.iconColor,
+    color: "white",
     height: 40,
     border: "1px solid rgba(224, 224, 224,1)",
     borderRadius: 10,
@@ -49,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   closeIcon: {
-    color: theme.palette.primary.iconColor,
+    color: "white",
     fontSize: 24,
     [theme.breakpoints.down("sm")]: {
       fontSize: 18,
@@ -66,13 +66,13 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     cursor: "pointer",
-    color: theme.palette.primary.iconColor,
+    color: "white",
     marginBottom: 10,
     fontSize: 14,
     fontWeight: 400,
   },
   slippageItem: {
-    color: theme.palette.primary.iconColor,
+    color: "white",
     cursor: "pointer",
     border: "1px solid rgba(224, 224, 224,1)",
     background: theme.palette.primary.iconBack,
@@ -98,7 +98,7 @@ const useStyles = makeStyles((theme) => ({
   },
   applyButton: {
     marginTop: 20,
-    backgroundColor: theme.palette.primary.pbr,
+    backgroundColor: "blue",
 
     color: theme.palette.primary.buttonText,
     width: "84%",
@@ -118,7 +118,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   heading: {
-    color: theme.palette.primary.iconColor,
+    color: "white",
     paddingTop: 10,
   },
 }));

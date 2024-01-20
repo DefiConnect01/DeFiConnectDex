@@ -63,7 +63,7 @@ const useStyles = makeStyles((theme) => ({
     marginRight: 10,
   },
   changeIndicator: {
-    background: "green",
+    background: "white",
     color: "white",
     fontSize: 12,
     marginLeft: 10,
@@ -84,7 +84,7 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: 10,
   },
   liquidityCard: {
-    height: 130,
+    height: 131,
     width: "100%",
     borderRadius: 15,
     paddingLeft: 15,
@@ -108,7 +108,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
   },
   cardChangeIndicator: {
-    color: "green",
+    color: "white",
     fontSize: 18,
   },
   chartsCard: {

@@ -40,6 +40,7 @@ export const theme = createMuiTheme({
     },
     primary: {
       pbr: "rgba(224, 7, 125, 1)",
+      // pbr: "blue",
       pbrSwap:"linear-gradient(90deg, #C229BE 0%, #591359 100%)",
       iconBack: "#150215",
       iconColor: "#C369A5",
@@ -47,10 +48,12 @@ export const theme = createMuiTheme({
       appLink: "#212121",
       bgCard: "#150215",
       buttonText: "#ffffff",
-      buttonColor: "#bdbdbd",
+      // buttonColor: "#bdbdbd",
+      buttonColor: "white",
       tokenBack: "#212121",
       light: "rgba(89, 210, 188, 1)",
       main: "#674293",
+      // main: "white"
     },
   },
 });

@@ -98,7 +98,7 @@ const useStyles = makeStyles((theme) => ({
   },
   switchBtn: {
     marginTop: 30,
-    backgroundColor: theme.palette.primary.pbr,
+    backgroundColor: "blue",
     color: "white",
     width: "auto",
     height: 45,
@@ -289,7 +289,7 @@ const WalletModal = ({ popupActive, resetPopup }) => {
                   }}
                   mt={3}
                 >
-                  By connecting a wallet, you agree to SOLAK Terms of
+                  By connecting a wallet, you agree to Xfi Terms of
                   Service and consent to its Privacy Policy.
                 </Typography>
               </Box>
@@ -320,7 +320,9 @@ const WalletModal = ({ popupActive, resetPopup }) => {
               >
                 <Box
                   className={classes.card}
-                  style={{ backgroundColor: "#d1c4e9" }}
+                  // style={{ backgroundColor: "#d1c4e9" }}
+                  // style={{ backgroundColor: "#DFF85E" }}
+                  style={{ backgroundColor: "black" }}
                   onClick={() => handleConnect("metamask")}
                 >
                   <img

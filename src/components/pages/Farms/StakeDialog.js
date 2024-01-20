@@ -93,7 +93,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   confirmButton: {
-    backgroundColor: "rgba(224, 7, 125, 0.9)",
+    backgroundColor: "blue",
     color: "white",
     textTransform: "none",
     fontSize: 17,
@@ -263,7 +263,7 @@ const StakeDialog = ({ open, type, poolInfo, handleClose }) => {
                 onClick={closeAction}
               >
                 <CloseIcon
-                  style={{ color: "rgba(224, 7, 125, 0.9)", padding: 0 }}
+                  style={{ color: "blue", padding: 0 }}
                 />
               </IconButton>
             </div>

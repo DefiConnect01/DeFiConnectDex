@@ -377,12 +377,12 @@ export function formattedPercent(percent, useBrackets = false) {
   if (fixedPercent > 0) {
     if (fixedPercent > 100) {
       return (
-        <Text fontWeight={500} color="green">{`+${percent
+        <Text fontWeight={500} color="white">{`+${percent
           ?.toFixed(0)
           .toLocaleString()}%`}</Text>
       );
     } else {
-      return <Text fontWeight={500} color="green">{`+${fixedPercent}%`}</Text>;
+      return <Text fontWeight={500} color="white">{`+${fixedPercent}%`}</Text>;
     }
   } else {
     return <Text fontWeight={500} color="red">{`${fixedPercent}%`}</Text>;

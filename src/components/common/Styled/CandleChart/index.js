@@ -127,12 +127,12 @@ const CandleStickChart = ({
       });
 
       var candleSeries = chart.addCandlestickSeries({
-        upColor: "green",
+        upColor: "white",
         downColor: "red",
         borderDownColor: "red",
-        borderUpColor: "green",
+        borderUpColor: "white",
         wickDownColor: "red",
-        wickUpColor: "green",
+        wickUpColor: "white",
       });
 
       candleSeries.setData(formattedData);

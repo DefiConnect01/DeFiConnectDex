@@ -77,7 +77,7 @@ const useStyles = makeStyles((theme) => ({
     zIndex: -100,
   },
   changeIndicator: {
-    background: "green",
+    background: "white",
     color: "white",
     fontSize: 12,
     marginLeft: 10,
@@ -131,7 +131,7 @@ const useStyles = makeStyles((theme) => ({
     marginRight: 10,
   },
   cardChangeIndicator: {
-    color: "green",
+    color: "white",
     fontSize: 18,
     [theme.breakpoints.down("sm")]: {
       fontSize: 18,

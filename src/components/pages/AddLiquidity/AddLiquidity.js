@@ -44,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   icon: {
-    color: theme.palette.primary.iconColor,
+    color: "white",
 
     fontSize: 24,
     [theme.breakpoints.down("sm")]: {
@@ -53,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     backgroundColor: theme.palette.primary.iconBack,
-    color: theme.palette.primary.iconColor,
+    color: "white",
     borderColor: "#f6f6f6",
     height: 50,
     textTransform: "none",
@@ -72,7 +72,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   heading: {
-    color: theme.palette.primary.iconColor,
+    color: "white",
   },
 }));
 

@@ -19,7 +19,13 @@ export const FALLBACK_URLS: any = {
   ],
   [SupportedChainId.GramTestnet]: [
     // "Fallback" URLs
-    "https://rpc-tokio.swiss-node.engineer/",
+    "https://tokio-archive.engram.tech/",
+    "https://engram.tech/testnet",
+  ],
+  [SupportedChainId.PLUME_TESTNET]: [
+    // "Fallback" URLs
+    "https://plume-testnet.rpc.caldera.xyz/http",
+    "",
   ],
   [SupportedChainId.ZKERA]: [
     // "Fallback" URLs
@@ -98,7 +104,7 @@ export const RPC_URLS: any = {
   ],
   [SupportedChainId.GramTestnet]: [
     // `https://mainnet.era.zksync.io`,
-    `https://rpc-tokio.swiss-node.engineer/`,
+    `https://tokio-archive.engram.tech/`,
     ...FALLBACK_URLS[SupportedChainId.GramTestnet],
   ],
   [SupportedChainId.ZKERA]: [

@@ -13,7 +13,7 @@ import useActiveWeb3React from "hooks/useActiveWeb3React";
 const useStyles = makeStyles((theme) => ({
   background: {
     backgroundColor: "#ffffff",
-    color: theme.palette.primary.iconColor,
+    color: "white",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 400,
     textAlign: "left",
 
-    color: theme.palette.primary.iconColor,
+    color: "white",
     [theme.breakpoints.down("sm")]: {
       fontSize: 20,
     },
@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: 15,
     fontSize: 18,
     width: "90%",
-    color: theme.palette.primary.iconColor,
+    color: "white",
     padding: 10,
     outline: "none",
     [theme.breakpoints.down("sm")]: {
@@ -64,7 +64,7 @@ const useStyles = makeStyles((theme) => ({
   },
   cancelButton: {
     backgroundColor: theme.palette.primary.iconBack,
-    color: theme.palette.primary.iconColor,
+    color: "white",
     width: "100%",
     textTransform: "none",
     fontSize: 17,

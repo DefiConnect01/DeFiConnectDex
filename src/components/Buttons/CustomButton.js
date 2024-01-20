@@ -3,9 +3,9 @@ import React from "react";
 
 const useStyles = makeStyles((theme) => ({
   stakeButton: {
-    backgroundColor: "rgba(224, 7, 125, 0.9)",
+    backgroundColor: "blue",
     color: "white",
-    width: 130,
+    width: 131,
     height: 40,
     textTransform: "none",
     fontSize: 16,
@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "rgba(255, 255, 255, 0.1)",
     color: "#f6f6f6",
     borderColor: "#f6f6f6",
-    width: 130,
+    width: 131,
     height: 40,
     textTransform: "none",
     fontSize: 16,

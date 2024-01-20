@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     backgroundColor: theme.palette.primary.iconBack,
+    // backgroundColor: "white",
     borderRadius: 20,
     paddingLeft: 8,
     paddingRight: 0,
@@ -26,7 +27,8 @@ const useStyles = makeStyles((theme) => ({
   noToken: {
     display: "flex",
     alignItems: "center",
-    backgroundColor: "rgba(224, 7, 125, 0.9)",
+    // backgroundColor: "blue",// pink background
+    backgroundColor: "blue",
 
     borderRadius: 12,
     paddingLeft: 13,
@@ -108,6 +110,7 @@ const SelectToken = ({
 
         {!selectedToken.symbol ? (
           <span style={{color:"white"}} className={classes.selectToken}>Select</span>
+
         ) : (
           <span style={{color:"white"}} className={classes.selectedToken}>{selectedToken.symbol}</span>
         )}

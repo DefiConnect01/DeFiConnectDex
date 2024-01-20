@@ -120,7 +120,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   approveBtn: {
-    backgroundColor: theme.palette.primary.pbrSwap,
+    backgroundColor: "blue",
     color: theme.palette.primary.buttonText,
     textTransform: "none",
     fontSize: 17,
@@ -137,7 +137,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   stakeBtn: {
-    backgroundColor: theme.palette.primary.pbrSwap,
+    backgroundColor: "blue",
     color: theme.palette.primary.buttonText,
     textTransform: "none",
     fontSize: 28,

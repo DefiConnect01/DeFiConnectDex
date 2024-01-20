@@ -72,6 +72,9 @@ export const RPC_PROVIDERS: any = {
   [SupportedChainId.GramTestnet]: new AppJsonRpcProvider(
     SupportedChainId.GramTestnet
   ),
+  [SupportedChainId.PLUME_TESTNET]: new AppJsonRpcProvider(
+    SupportedChainId.PLUME_TESTNET
+  ),
   [SupportedChainId.ZKERA]: new AppJsonRpcProvider(
     SupportedChainId.ZKERA
   ),

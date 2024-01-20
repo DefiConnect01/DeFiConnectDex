@@ -256,11 +256,11 @@ const TextWrapper = styled(Text)`
 
 //   // other
 //   red1: "#FF6871",
-//   green1: "#27AE60",
+//   white1: "#27AE60",
 //   yellow1: "#FFE270",
 //   yellow2: "#F3841E",
 //   link: "#2172E5",
-//   blue: "2f80ed",
+//   white: "2f80ed",
 
 //   background: darkMode
 //     ? "black"

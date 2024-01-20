@@ -8,15 +8,19 @@ export const TOKEN_ADDRESS = {
   
   ETH : {
     324: "0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91",
-    5: "0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6"
+    5: "0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6",
+    161221135: "0xd9d6507119Ec56ce22A89bEdAcd6B44D495BFf08"
     
   },
-  XFFI: {
+  DCC: {
+    161221135: "0x42F16c5E448114CB9a93D47b81349CdAE13ED768",
+  },
+  XFI: {
     5: "0x4Ec1c1337c555c1E2DFD814837fBc81Fc28ff716",
-    130: "0xAdd81452c4fc1C3CCA5831e312384f4f3978f30e"
+    131: "0x75dA9858f0bb8f95973269eB3808Ffa5Adf12ad9"
   },
   tGRAM: {
-    130: "0x2cE89A6c99B45d1b62c1c07cAF731bF12d88C293"
+    131: "0x7E3e3C50927F78ce0D2a1699d15d342c976A49B0"
   },
   WETH :{
     324: "0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91",
@@ -75,7 +79,8 @@ export const NATIVE_TOKEN_ADDRESS: { [index: string]: string } = {
   97: TOKEN_ADDRESS.BNB[97],
   // 80001: TOKEN_ADDRESS.WMATIC[80001],
   324: TOKEN_ADDRESS.WETH[324],
-  130: TOKEN_ADDRESS.tGRAM[130]
+  131: TOKEN_ADDRESS.tGRAM[131],
+  161221135: TOKEN_ADDRESS.ETH[161221135]
   // 324: TOKEN_ADDRESS.ETH[324]
 };
 
@@ -89,7 +94,8 @@ export const ROUTER_ADDRESS: { [index: string]: string } = {
   // 324: "0xB22eeFe3a73299a7b90045a5DfA624315C680502",
   // 97: "0x569304D8debeA03F8777C592Bb5791EB5d2A5E73"
   // 5: "0xfece9DF2D4bC76020A368C909C105e7863fC0860",
-  130:"0x69594650D7B57b903296042559d41f86a6D9ffA9"
+  131:"0xBb6ACd284cC06Ca530cb54a59521F3390bEbC78d",
+  161221135: "0x9Af36aD30ecAc6ce8B6D1F3d6C42711c48Ab627f",
 };
 
 export const FACTORY_ADDRESS = {
@@ -102,7 +108,8 @@ export const FACTORY_ADDRESS = {
   // 324: "0xf7C0d93a508986d8b7d86bE0d3E9F38Cf34C00CD",
   // 97: "0x8243cCF45C05Ca6714D11D612Ab52BE756220c42"
   // 5: "0x929b6543a6Acd3467006ef2aAA35C0C8D3C15611",
-  130:"0x82628bA866c5a27Fa8c29120485cb80Bf04A43DD"
+  131:"0xaB7E9de34f2ba91C430f1Fd20a77bD245D883Df5",
+  161221135: "0xCD1FfF5FcDE62bEFDc1a7E3Ddf6E166fA24f7B98"
 };
 
 export const FARM_ADDRESS: { [index: string]: string } = {
@@ -124,7 +131,8 @@ export const MULTICALL_ADDRESS: { [index: string]: string } = {
   // // 97: " 0x120326Ca9Fd2FC38eaBE7bf97Ae4E1C0F9ab835c"
   // 97: "0x923Bf2dc4430E34bA7a818b3427965EE3f9FCa5a"
   5: "0x09926fE723a2a2eBb615159cB5dE98e12D649B7e",
-  130: "0xCD1FfF5FcDE62bEFDc1a7E3Ddf6E166fA24f7B98"
+  131: "0x001bda7D844Ee0C35AD683b1259d9732d7C7c19f",
+  161221135: "0x63101C389e9a005a1f3b9EB036B73a95FC23fAEf"
 };
 
 export const farmContractConfig = {
@@ -145,15 +153,17 @@ export const STT = "STT";
 export const STMx= "STMx";
 export const WETH= "WETH";
 export const SGPT= "SGPT";
-export const XFFI = "XFFI";
+export const XFI = "XFI";
 export const tGRAM = "tGRAM"
+export const DCC = "DCC";
 
 export const NATIVE_TOKEN: { [index: number]: string } = {
   // 1: ETH,
   // 4: ETH,
   97: BNB,
   5: ETH,
-  130: tGRAM,
+  161221135: ETH,
+  131: tGRAM,
   // 56: BNB,
   // 80001:WMATIC
   324: WETH
@@ -178,7 +188,8 @@ export const DEFAULT_SWAP_TOKENS = {
   324: ["WETH", "STMx"],
   // 324: ["ETH", "STMx"]
   5: ["ETH","XFI"],
-  130: ["tGRAM","XFFI"]
+  131: ["tGRAM","XFI"],
+  161221135: ["ETH", "DCC"],
 };
 
 export const DEFAULT_POOL_TOKENS = {
@@ -190,7 +201,8 @@ export const DEFAULT_POOL_TOKENS = {
   // 324: ["WETH", "STMx"]
   // 324: ["ETH", "STMx"]
   // 5: ["ETH","XFFI"],
-  130: ["tGRAM","XFFI"]
+  131: ["tGRAM","XFI"],
+  161221135: ["ETH", "DCC"],
 };
 
 export const TOKEN_BLACKLIST = [];
@@ -209,9 +221,10 @@ export const zksyncNetwork = "zksync";
 export const testbscNetwork = "testbsc";
 export const goerliNetwork = "goerli"
 export const gramNetwork = "gram"
+export const plumeNetwork = "plume";
 
 export const supportedChains = [
-  1, 4, 5, 1285, 1287, 97, 56, 130, 137, 80001, 324, 1666700000, 1666600000,
+  1, 4, 5, 1285, 1287, 97, 56, 131, 137, 161221135, 80001, 324, 1666700000, 1666600000,
 ];
 
 export const allowanceAmount = "9999999999999999999999999";
@@ -225,7 +238,8 @@ export const BLOCK_EXPLORER = {
   80001: "https://mumbai.polygonscan.com/",
   324: "https://explorer.zksync.io/",
   5: "https://goerli.etherscan.io/",
-  130: "https://scan.engram.tech/"
+  131: "https://scan.engram.tech/",
+  161221135: "https://plume-testnet.explorer.caldera.xyz/"
 };
 
 export const nullAddress = "0x0000000000000000000000000000000000000000";
@@ -266,7 +280,7 @@ export const supportedFarmingPools = {
   56: ["PBR-BNB", "PWAR-BNB", "BNB-USDT"],
   97: ["PWAR-BNB", "BNB-USDT"],
   // 5: ["XFI-ETH"],
-  // 130: ["XFI-tGRAM"]
+  // 131: ["XFI-tGRAM"]
 };
 
 export const farmingPoolConstants = {
@@ -390,6 +404,7 @@ export const SWAP_BASES: { [index: string]: Array<string> } = {
   1: ["USDT", "USDC", "ETH"],
   4: ["USDT", "USDC", "ETH"],
   5:["ETH","XFI"],
+  161221135: ["ETH", "DCC"],
   1285: [],
   1287: [],
   // 97: ["BNB", "USDT", "USDC"],
@@ -398,7 +413,7 @@ export const SWAP_BASES: { [index: string]: Array<string> } = {
   137: [],
   80001: ["WMATIC", "STT"],
   324: ["WETH", "STMx", "ETH"],
-  130:["tGRAM","XFFI"],
+  131:["tGRAM","XFI"],
   // 324: ["ETH", "STMx"],
 
   1666700000: [],

@@ -2,19 +2,19 @@
   {
     "name": "Wrapped Gram",
     "symbol": "tGRAM",
-    "address": "0x2cE89A6c99B45d1b62c1c07cAF731bF12d88C293",
+    "address": "0x7E3e3C50927F78ce0D2a1699d15d342c976A49B0",
     "decimals": 18,
-    "chainId": 130,
+    "chainId": 131,
    "logoURI":"https://i.ibb.co/R6vr6Wf/engram.jpg"
 
   },
 
   {
     "name": "Xfi Token",
-    "symbol": "XFFI",
-    "address": "0xAdd81452c4fc1C3CCA5831e312384f4f3978f30e",
+    "symbol": "XFI",
+    "address": "0x75dA9858f0bb8f95973269eB3808Ffa5Adf12ad9",
     "decimals": 18,
-    "chainId": 130,
+    "chainId": 131,
     "logoURI": "https://i.ibb.co/GHMBZ8Z/Defi-Connet-Logo-nobg.png"
   }
  

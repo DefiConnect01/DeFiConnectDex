@@ -7,7 +7,8 @@ export enum SupportedChainId {
   GOERLI = 5,
   KOVAN = 42,
   ZKERA = 324,
-  GramTestnet = 130,
+  GramTestnet = 131,
+  PLUME_TESTNET = 161221135,
   BSC = 56,
   BSC_TESTNET = 97,
 
@@ -19,6 +20,7 @@ export enum SupportedChainId {
 
   POLYGON = 137,
   POLYGON_MUMBAI = 80001,
+  
 }
 
 export const CHAIN_IDS_TO_NAMES = {
@@ -37,6 +39,7 @@ export const CHAIN_IDS_TO_NAMES = {
   [SupportedChainId.POLYGON_MUMBAI]: "polygon_mumbai",
   [SupportedChainId.ZKERA]: "zksync_era",
   [SupportedChainId.GramTestnet]: "gram_testnet",
+  [SupportedChainId.PLUME_TESTNET]: "plume_testnet",
 };
 
 export const ALL_SUPPORTED_CHAIN_IDS: SupportedChainId[] = Object.values(
@@ -47,7 +50,8 @@ export const MULTICALL_ADDRESS: { [index: string]: string } = {
   // 1: "0x3a2Bd96Da4B14C30918aE0fC0E784E2F56120F1d",
   // 4: "0x6c4f9282bBD29992bF4F064F0165e805336Eef59",
   5: "0x09926fE723a2a2eBb615159cB5dE98e12D649B7e",
-  130: "0xCD1FfF5FcDE62bEFDc1a7E3Ddf6E166fA24f7B98"
+  131: "0x001bda7D844Ee0C35AD683b1259d9732d7C7c19f",
+  161221135:"0x63101C389e9a005a1f3b9EB036B73a95FC23fAEf",
   // 97: "0x688EC8C059592104fC713E0dA9276e649302C4Ab",
   // 56: "0x6e568FcE995F5c7ddaFB8C0b74B3241328498F8A",
   // 137: "0xbfB508313126cf61CFb3BD7e570cC79C67998A53",
@@ -60,11 +64,14 @@ export const MULTICALL_ADDRESS: { [index: string]: string } = {
 
 };
 
+//https://plume-testnet.rpc.caldera.xyz/http
+
 export const NATIVE_TOKEN: { [index: number]: string } = {
   // 1: "ETH",
   // 4: "ETH",
   5: "ETH",
-  130: "tGRAM",
+  161221135: "ETH",
+  131: "tGRAM",
   // 97: "BNB",
   // 56: "BNB",
   // 137: "MATIC",
@@ -95,6 +102,11 @@ export const NETWORK_DETAILS = {
     chainId: `0x${SupportedChainId.GramTestnet.toString(16)}`,
     chainName: CHAIN_IDS_TO_NAMES[SupportedChainId.GramTestnet],
     chainRaw: SupportedChainId.GramTestnet,
+  },
+  PLUME: {
+    chainId: `0x${SupportedChainId.PLUME_TESTNET.toString(16)}`,
+    chainName: CHAIN_IDS_TO_NAMES[SupportedChainId.PLUME_TESTNET],
+    chainRaw: SupportedChainId.PLUME_TESTNET,
   },
   ZKERA: {
     chainId: `0x${SupportedChainId.ZKERA.toString(16)}`,
@@ -154,6 +166,16 @@ const CHAIN_INFO: any = {
     label: "Ethereum",
     // logoUrl: ethereumLogoUrl,
     nativeCurrency: { name: "Ether", symbol: "ETH", decimals: 18 },
+    // color: darkTheme.chain_1,
+  },
+  [SupportedChainId.PLUME_TESTNET]: {
+    networkType: NetworkType.L1,
+    // docs: 'https://docs.uniswap.org/',
+    explorer: "https://plume-testnet.explorer.caldera.xyz//",
+    // infoLink: 'https://info.uniswap.org/#/',
+    label: "Plume",
+    // logoUrl: ethereumLogoUrl,
+    nativeCurrency: { name: "ETH", symbol: "ETH", decimals: 18 },
     // color: darkTheme.chain_1,
   },
   [SupportedChainId.GramTestnet]: {
@@ -234,12 +256,13 @@ export function isSupportedChain(
 }
 
 // export const FALLBACK_DEFAULT_CHAIN: number = SupportedChainId.ZKERA;
-export const FALLBACK_DEFAULT_CHAIN: number = SupportedChainId.GramTestnet; // Todo change this for release
+export const FALLBACK_DEFAULT_CHAIN: number = SupportedChainId.PLUME_TESTNET; // Todo change this for release
 export const DAPP_SUPPORTED_ON_CHAINS: number[] = [
   SupportedChainId.MAINNET,
   SupportedChainId.BSC,
   SupportedChainId.POLYGON_MUMBAI,
   SupportedChainId.ZKERA,
   SupportedChainId.GOERLI ,
-  SupportedChainId.GramTestnet
+  SupportedChainId.GramTestnet,
+  SupportedChainId.PLUME_TESTNET
 ];

@@ -1,0 +1,21 @@
+[
+    {
+      "name": "Plume Testnet",
+      "symbol": "ETH",
+      "address": "0xd9d6507119Ec56ce22A89bEdAcd6B44D495BFf08",
+      "decimals": 18,
+      "chainId":161221135 ,
+     "logoURI":"https://i.ibb.co/rGJ8WyX/eth-logo.png"
+  
+    },
+  
+    {
+      "name": "DefiConnect Token",
+      "symbol": "DCC",
+      "address": "0x42F16c5E448114CB9a93D47b81349CdAE13ED768",
+      "decimals": 18,
+      "chainId": 161221135,
+      "logoURI": "https://i.ibb.co/Z6hz0Dq/deficonnectcredit1.png"
+    }
+   
+  ]

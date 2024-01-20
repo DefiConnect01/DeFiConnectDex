@@ -60,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 13,
   },
   changeIndicator: {
-    background: "green",
+    background: "white",
     color: "white",
     fontSize: 12,
     marginLeft: 10,

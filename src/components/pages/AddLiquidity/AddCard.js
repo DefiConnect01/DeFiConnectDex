@@ -78,7 +78,7 @@
 //     display: "flex",
 //     justifyContent: "space-between",
 //     alignItems: "center",
-//     color: theme.palette.primary.iconColor,
+//     color: "white",
 
 //     [theme.breakpoints.down("sm")]: {
 //       paddingTop: 0,
@@ -93,7 +93,7 @@
 //     alignItems: "center",
 //   },
 //   cardSubHeading: {
-//     color: theme.palette.primary.iconColor,
+//     color: "white",
 
 //     display: "flex",
 //     width: "95%",
@@ -103,14 +103,14 @@
 //     marginBottom: 2,
 //   },
 //   settingIcon: {
-//     color: theme.palette.primary.iconColor,
+//     color: "white",
 //     fontSize: 22,
 //     [theme.breakpoints.down("sm")]: {
 //       fontSize: 20,
 //     },
 //   },
 //   addIcon: {
-//     color: theme.palette.primary.iconColor,
+//     color: "white",
 //     marginTop: -12,
 //     marginBottom: -12,
 //     borderRadius: "36%",
@@ -207,7 +207,7 @@
 //   },
 //   addLiquidityButton: {
 //     marginTop: 20,
-//     backgroundImage: theme.palette.primary.pbrSwap,
+//     backgroundImage: "blue"Swap,
 //     color: "white",
 //     width: "95%",
 //     textTransform: "none",
@@ -1036,7 +1036,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    color: theme.palette.primary.iconColor,
+    color: "white",
 
     [theme.breakpoints.down("sm")]: {
       paddingTop: 0,
@@ -1051,7 +1051,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
   },
   cardSubHeading: {
-    color: theme.palette.primary.iconColor,
+    color: "white",
 
     display: "flex",
     width: "95%",
@@ -1061,14 +1061,14 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: 2,
   },
   settingIcon: {
-    color: theme.palette.primary.iconColor,
+    color: "white",
     fontSize: 22,
     [theme.breakpoints.down("sm")]: {
       fontSize: 20,
     },
   },
   addIcon: {
-    color: theme.palette.primary.iconColor,
+    color: "white",
     marginTop: -12,
     marginBottom: -12,
     borderRadius: "36%",
@@ -1165,7 +1165,7 @@ const useStyles = makeStyles((theme) => ({
   },
   addLiquidityButton: {
     marginTop: 20,
-    backgroundColor: theme.palette.primary.pbr,
+    backgroundColor: "blue",
     color: "white",
     width: "95%",
     textTransform: "none",

@@ -5,7 +5,7 @@ import BigNumber from "bignumber.js";
 import React from "react";
 
 const useStyles = makeStyles((theme) => ({
-  statPercentageGreen: {
+  statPercentagewhite: {
     color: "#9ccc65",
     fontSize: 14,
     [theme.breakpoints.down("sm")]: {
@@ -49,7 +49,7 @@ const PercentLabel = ({ percentValue, className, braces = false }) => {
     <div
       className={[
         percentValue >= 0
-          ? ownClasses.statPercentageGreen
+          ? ownClasses.statPercentagewhite
           : ownClasses.statPercentageRed,
         className,
       ].join(" ")}

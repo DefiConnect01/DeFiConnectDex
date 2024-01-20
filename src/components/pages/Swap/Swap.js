@@ -81,7 +81,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "flex-start",
   },
   settingIcon: {
-    color: theme.palette.primary.iconColor,
+    color: "white",
     fontSize: 22,
     cursor: "pointer",
     transition: "all 0.4s ease",
@@ -96,7 +96,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "30%",
   },
   swapIcon: {
-    color: theme.palette.primary.iconColor,
+    color: "white",
     marginTop: -12,
     marginBottom: -12,
     borderRadius: "36%",
@@ -109,7 +109,7 @@ const useStyles = makeStyles((theme) => ({
   },
   swapButton: {
     marginTop: 30,
-    backgroundColor: theme.palette.primary.pbr,
+    backgroundColor: "blue",
     color: "white",
     width: "95%",
     textTransform: "none",
@@ -179,7 +179,7 @@ const useStyles = makeStyles((theme) => ({
   },
   certikLabel: {
     textAlign: "center",
-    color: theme.palette.primary.iconColor,
+    color: "white",
     fontWeight: 600,
     fontSize: 14,
     paddingTop: 3,
@@ -187,7 +187,7 @@ const useStyles = makeStyles((theme) => ({
   },
   ankrLabel: {
     textAlign: "center",
-    color: theme.palette.primary.iconColor,
+    color: "white",
     fontSize: 12,
     paddingTop: 3,
   },
