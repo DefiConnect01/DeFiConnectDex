@@ -27,8 +27,8 @@ const useStyles = makeStyles((theme) => ({
   noToken: {
     display: "flex",
     alignItems: "center",
-    // backgroundColor: "blue",// pink background
-    backgroundColor: "blue",
+    // backgroundColor: "#0284c7",// pink background
+    backgroundColor: "#0284c7",
 
     borderRadius: 12,
     paddingLeft: 13,

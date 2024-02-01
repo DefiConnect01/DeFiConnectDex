@@ -16,6 +16,15 @@
       "decimals": 18,
       "chainId": 161221135,
       "logoURI": "https://i.ibb.co/Z6hz0Dq/deficonnectcredit1.png"
+    },
+    {
+      "name":"USDC Token",
+      "symbol": "USDC",
+      "address": "0xEa237441c92CAe6FC17Caaf9a7acB3f953be4bd1",
+      "decimals": 6,
+      "chainId": 161221135,
+      "logoURI": "https://i.ibb.co/GPjcRCL/usd-coin-usdc-logo.png"
+
     }
    
   ]

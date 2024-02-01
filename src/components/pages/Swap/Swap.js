@@ -109,7 +109,7 @@ const useStyles = makeStyles((theme) => ({
   },
   swapButton: {
     marginTop: 30,
-    backgroundColor: "blue",
+    backgroundColor: "#0284c7",
     color: "white",
     width: "95%",
     textTransform: "none",

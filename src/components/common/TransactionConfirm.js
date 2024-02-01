@@ -84,7 +84,7 @@ const useStyles = makeStyles((theme) => ({
   confirmButton: {
     marginTop: 15,
     marginBottom: 15,
-    backgroundColor: "blue",
+    backgroundColor: "#0284c7",
     color: "white",
     width: "90%",
     textTransform: "none",

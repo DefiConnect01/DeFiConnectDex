@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
   },
   closeButton: {
     marginTop: 20,
-    backgroundColor: "blue",
+    backgroundColor: "#0284c7",
     color: "white",
     width: "90%",
     textTransform: "none",

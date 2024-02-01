@@ -120,7 +120,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   approveBtn: {
-    backgroundColor: "blue",
+    backgroundColor: "#0284c7",
     color: theme.palette.primary.buttonText,
     textTransform: "none",
     fontSize: 17,
@@ -137,7 +137,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   stakeBtn: {
-    backgroundColor: "blue",
+    backgroundColor: "#0284c7",
     color: theme.palette.primary.buttonText,
     textTransform: "none",
     fontSize: 28,

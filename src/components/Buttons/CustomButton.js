@@ -3,7 +3,7 @@ import React from "react";
 
 const useStyles = makeStyles((theme) => ({
   stakeButton: {
-    backgroundColor: "blue",
+    backgroundColor: "#0284c7",
     color: "white",
     width: 131,
     height: 40,

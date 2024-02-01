@@ -40,7 +40,7 @@ export const theme = createMuiTheme({
     },
     primary: {
       pbr: "rgba(224, 7, 125, 1)",
-      // pbr: "blue",
+      // pbr: "#0284c7",
       pbrSwap:"linear-gradient(90deg, #C229BE 0%, #591359 100%)",
       iconBack: "#150215",
       iconColor: "#C369A5",

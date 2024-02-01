@@ -98,7 +98,7 @@ const useStyles = makeStyles((theme) => ({
   },
   switchBtn: {
     marginTop: 30,
-    backgroundColor: "blue",
+    backgroundColor: "#0284c7",
     color: "white",
     width: "auto",
     height: 45,

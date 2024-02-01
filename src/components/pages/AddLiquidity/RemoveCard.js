@@ -208,7 +208,7 @@ const useStyles = makeStyles((theme) => ({
   },
   removeBtn: {
     marginTop: 20,
-    backgroundColor: "blue",
+    backgroundColor: "#0284c7",
     color: "white",
     width: "95%",
     textTransform: "none",
@@ -228,7 +228,7 @@ const useStyles = makeStyles((theme) => ({
   },
   approveBtn: {
     marginTop: 30,
-    backgroundColor: "blue",
+    backgroundColor: "#0284c7",
     color: theme.palette.primary.buttonText,
 
     width: "fit-content",

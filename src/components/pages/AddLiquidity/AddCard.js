@@ -207,7 +207,7 @@
 //   },
 //   addLiquidityButton: {
 //     marginTop: 20,
-//     backgroundImage: "blue"Swap,
+//     backgroundImage: "#0284c7"Swap,
 //     color: "white",
 //     width: "95%",
 //     textTransform: "none",
@@ -1165,7 +1165,7 @@ const useStyles = makeStyles((theme) => ({
   },
   addLiquidityButton: {
     marginTop: 20,
-    backgroundColor: "blue",
+    backgroundColor: "#0284c7",
     color: "white",
     width: "95%",
     textTransform: "none",

@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     width: 400,
     justifyContent: "space-between",
     alignItems: "center",
-    background: "blue",
+    background: "#0284c7",
     // background: "",
     padding: 7,
     [theme.breakpoints.down("sm")]: {
@@ -61,7 +61,7 @@ const useStyles = makeStyles((theme) => ({
     background: "black",
     // background: "#DFF85E",
     // color: "white",
-    color: "blue",
+    color: "#0284c7",
     padding: 3,
     paddingLeft: 15,
     paddingRight: 15,

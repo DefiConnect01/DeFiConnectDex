@@ -73,8 +73,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   signoutButton: {
-    // backgroundColor: "blue",
-   backgroundColor: "blue",
+    // backgroundColor: "#0284c7",
+   backgroundColor: "#0284c7",
     color: theme.palette.primary.buttonText,
     borderColor: "#f6f6f6",
     width: 131,

@@ -98,7 +98,7 @@ const useStyles = makeStyles((theme) => ({
   },
   applyButton: {
     marginTop: 20,
-    backgroundColor: "blue",
+    backgroundColor: "#0284c7",
 
     color: theme.palette.primary.buttonText,
     width: "84%",
